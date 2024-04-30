@@ -1,42 +1,115 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* App.css */
+
+/* Style for the entire app */
+* {
+  box-sizing: border-box;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+input {
+  width: 25% !important;
+  margin-right: 0.25em!important;
+  margin-left: 0.25em!important;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  margin: 0;
+  padding: 10px;
+  padding-right: 25px;
+  font-family: sans-serif;
+}
+.form-inputs{
+  display: flex;
+  justify-content: space-evenly;
+} 
+
+
+
+
+/* .App {
+  display: flex;
+  justify-content: center; 
+  text-align:  center; 
+  background-color: #f0f0f0; Background color of the entire screen
+} */
+
+/* Style for the title header */
+.title {
+  background-color: #170350; /* Background color for the header */
+  color: #ffffff; /* Text color for the header */
+  padding: 10px; /* Add some padding for better readability */
+  text-align: center; /* Center the text */
+  width: 100%; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Style for the search form */
+#search-form{
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+   margin: 5px 0;
+  height: 40px;
+  border-radius: 10px;
+  padding: 4px;
+  justify-content: space-between;
+}
+#search{
+  text-align: left;
+  flex: 1;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 80%;
 }
 
-.card {
-  padding: 2em;
+#new-item-form{
+  height: 70px;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin: 6px 0;
+  padding: 5px;
 }
-
-.read-the-docs {
-  color: #888;
+.text-input{
+  text-align: left;
+}
+#new-item-form input{
+  height: 25px;
+  font-size: 16px;
+}
+#new-item-form button{
+  height: 25px;
+  margin-top: 8px;
+  border-radius: 0;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+#fa-plus{
+  color: green;
+  font-weight: 600;
+  font-size: 15px;
+}
+table{
+  width: 100%;
+  border-radius: 4px;
+  border-collapse:collapse;
+}
+tr,td,th,table{
+  border: 1px solid;
+}
+th{
+  background: #081B4B;
+  color: white;
+  padding: 6px;
+}
+td{
+  padding: 3px;
+}
+.even{
+  background: #D6DCEA;
+}
+tr:hover{
+  color: green;
+  font-weight: 600;
 }
