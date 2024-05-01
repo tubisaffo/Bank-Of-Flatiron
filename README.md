@@ -17,7 +17,9 @@ This is a basic web application built in React that keeps track of transactions
 ## How To Run
 
 Clone the repository
+
 Run npm install in your terminal
+
 Run npm run dev in your terminal
 
 ## Technologies used
