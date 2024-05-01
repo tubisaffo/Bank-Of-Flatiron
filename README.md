@@ -10,7 +10,7 @@ Nationality: Kenyan.
 
 Current City: Nairobi, Kenya.
 
-About
+## About
 
 This is a basic web application built in React that keeps track of transactions
 
