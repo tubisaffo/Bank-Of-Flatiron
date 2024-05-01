@@ -86,7 +86,7 @@ body {
   cursor: pointer;
 }
 #fa-plus{
-  color: green;
+  color: gray;
   font-weight: 600;
   font-size: 15px;
 }
@@ -99,8 +99,7 @@ tr,td,th,table{
   border: 1px solid;
 }
 th{
-  background: #081B4B;
-  color: white;
+  color: black;
   padding: 6px;
 }
 td{

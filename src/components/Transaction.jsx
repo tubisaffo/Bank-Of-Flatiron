@@ -1,22 +1,14 @@
-import { useEffect, useState } from "react";
 import TransactionList from "./TrasactionList";
+import PropTypes from "prop-types";
 
-function Transactions() {
-  const [transactions, setTransactions] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:6001/transactions")
-      .then((r) => r.json())
-      .then((transc) => setTransactions(transc))
-      .catch((err) => console.log(err));
-  }, []);
+function Transactions({ transactions }) {
   return (
     <>
       <table>
         <tr>
           <th>DATE</th>
-          <th>CATEGORY</th>
           <th>DESCRIPTION</th>
+          <th>CATEGORY</th>
           <th>AMOUNT</th>
         </tr>
         {/* trs */}
@@ -37,3 +29,7 @@ function Transactions() {
   );
 }
 export default Transactions;
+
+Transactions.propTypes = {
+  transactions: PropTypes.array.isRequired,
+};

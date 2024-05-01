@@ -19,8 +19,8 @@ export default function TransactionList({
   return (
     <tr className={isEven ? "even" : ""}>
       <td>{date}</td>
-      <td>{category}</td>
       <td>{description}</td>
+      <td>{category}</td>
       <td>{amount}</td>
     </tr>
   );

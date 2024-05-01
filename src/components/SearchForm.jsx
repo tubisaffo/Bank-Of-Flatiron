@@ -1,7 +1,8 @@
 // import React from "react";
 import "../App.css";
+import PropTypes from "prop-types";
 
-function SearchForm() {
+function SearchForm({ value, onChange }) {
   return (
     <form id="search-form">
       <input
@@ -9,9 +10,16 @@ function SearchForm() {
         type="text"
         placeholder="Search for a Transaction..."
         required
+        value={value}
+        onChange={onChange}
       />
     </form>
   );
 }
+
+SearchForm.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
 
 export default SearchForm;
