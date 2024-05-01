@@ -4,13 +4,13 @@
 
 ## Author:
 
-## Name: SAFFO MOHAMED TUBI.
+Name: SAFFO MOHAMED TUBI.
 
-## Nationality: Kenyan.
+Nationality: Kenyan.
 
-## Current City: Nairobi, Kenya.
+Current City: Nairobi, Kenya.
 
-## About
+About
 
 This is a basic web application built in React that keeps track of transactions
 
@@ -24,10 +24,16 @@ Run npm run dev in your terminal
 
 ## Technologies used
 
-JavaScript, React, CSS
+HTML/CSS
 
-Support and contact details
+JavaScript
+
+React
+
+## Support and contact details
+
 [github.com/tubisaffo]
 
-License
+## License
+
 The content of this site is licensed under the MIT license
